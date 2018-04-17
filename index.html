@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>陌生你我他</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="mask"></div>
+    <div class="info">
+        <p>当前在线人数:<span>0</span></p>
+        <p class="m"><span>0</span></p>
+        <img src="img/person.png">
+        <div class="suggest" title="意见反馈"></div>
+    </div>
+    <div class="match">
+        <div class="loading">
+            <div class="loading_animation">
+                <div class='loading-anim'>
+                    <div class='border out'></div>
+                    <div class='border in'></div>
+                    <div class='border mid'></div>
+                    <div class='circle'>
+                        <span class='dot'></span>
+                        <span class='dot'></span>
+                        <span class='dot'></span>
+                        <span class='dot'></span>
+                        <span class='dot'></span>
+                        <span class='dot'></span>
+                        <span class='dot'></span>
+                        <span class='dot'></span>
+                        <span class='dot'></span>
+                        <span class='dot'></span>
+                        <span class='dot'></span>
+                        <span class='dot'></span>
+                    </div>
+                </div>
+            </div>
+            <p class="msg">正在寻找无聊的人...</p>
+        </div>
+        <div class="btn_confirm">开始匹配</div>
+        <div class="btn_cancel">取消匹配</div>
+    </div>
+    <div class="room" style="display: none">
+        <div style="display: none;" class="own_info">
+            <input type="text" class="a_url">
+            <input type="text" class="nickname">
+        </div>
+        <header>
+            <div class="btn">离开</div>
+            <div class="avatars">
+                <img src="" alt="" class="one">
+                <img src="" alt="" class="two">
+                <img src="" alt="" class="three">
+            </div>
+        </header>
+        <div class="content">
+            <div class="msg_contain">
+                <div class="msg">
+                    你在聊天室里的角色是<span class="one" style="color:#24c1c3;"></span>,
+                    另外一名成员是<span class="two" style="color:#47c193;"></span>,还有有一名是
+                    <span class="three" style="color:#47c193;"></span>
+                </div>
+                <div class="sys_msg">
+                </div>
+            </div>
+            <!--<div class="other">-->
+                <!--<img src="img/avatar1.jpg" alt="">-->
+                <!--<div>-->
+                    <!--<p class="nickname">工藤新一</p>-->
+                    <!--<div class="msg">-->
+                        <!--<div class="arrow"></div>-->
+                        <!--<div class="detail_msg">-->
+                            <!--黛西公主是什么东东:)-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="me">-->
+                <!--<img src="img/avatar2.jpg" alt="">-->
+                <!--<div class="msg">-->
+                    <!--<div class="arrow"></div>-->
+                    <!--<div class="detail_msg">-->
+                        <!--哇晒 是工藤欸:)-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <footer>
+            <input type="text" class="input">
+            <div class="btn_send" title="回车可以发送消息">发送</div>
+        </footer>
+    </div>
+
+    <div class="footer">寂寞的夜,寂寞的你</div>
+
+    <!--//提建议模态框-->
+    <div id="suggest_modal" style="color: #7699a8;" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" style="">写下您宝贵的建议吧~:)</h4>
+                </div>
+                <div class="modal-body" style="padding: 0;">
+                    <textarea rows="4" style="width: 100%;border: none;padding: 10px;color: #1d65a4;"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn_confirm" data-dismiss="modal">确定</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input id="room_id" style="display: none">
+    <script src="js/index.js"></script>
+</body>
+</html>
