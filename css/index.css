@@ -468,7 +468,7 @@ body{
 
 
 /*适配手机*/
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     .footer{
         margin-top: 4em;
     }
@@ -490,7 +490,7 @@ body{
     }
 
     .room{
-        height: 100%;
+        height: 100vh;
         width: 100%;
         position: absolute;
         left: 0;
